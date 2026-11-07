@@ -89,6 +89,30 @@ namespace Session_01_BOOKSTORE.Migrations
 
                     b.ToTable("books");
                 });
+
+            modelBuilder.Entity("Session_01_BOOKSTORE.Entities.category", b =>
+                {
+                    b.Property<int>("categoryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("categoryId"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("categoryId");
+
+                    b.ToTable("categories");
+                });
 #pragma warning restore 612, 618
         }
     }
