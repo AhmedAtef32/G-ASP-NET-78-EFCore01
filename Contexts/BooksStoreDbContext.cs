@@ -15,6 +15,6 @@ namespace Session_01_BOOKSTORE.Contexts
 
         DbSet<Book> books { get; set; }
         DbSet<Author> authors{ get; set; }
-        DbSet<category> categories{ get; set; }
+        DbSet<Category> categories{ get; set; }
     }
 }

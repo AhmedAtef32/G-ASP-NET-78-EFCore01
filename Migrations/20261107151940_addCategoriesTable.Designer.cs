@@ -93,7 +93,7 @@ namespace Session_01_BOOKSTORE.Migrations
                     b.ToTable("books");
                 });
 
-            modelBuilder.Entity("Session_01_BOOKSTORE.Entities.category", b =>
+            modelBuilder.Entity("Session_01_BOOKSTORE.Entities.Category", b =>
                 {
                     b.Property<int>("categoryId")
                         .ValueGeneratedOnAdd()

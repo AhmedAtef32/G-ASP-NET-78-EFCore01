@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Session_01_BOOKSTORE.Entities
 {
-    internal class category
+    internal class Category
     {
         public int categoryId { get; set; }
         public string Name { get; set; }
